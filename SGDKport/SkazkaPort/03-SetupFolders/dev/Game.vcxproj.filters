@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\content">
+      <UniqueIdentifier>{f1db03f6-34c2-4540-8011-afc4ccaed62a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\content">
+      <UniqueIdentifier>{02868655-9961-47c1-92b0-541f4bb722c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine">
+      <UniqueIdentifier>{8083579a-f3da-49e3-852b-81b3892bfa31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{0c5ce0cf-3ad7-42b6-a334-0b5b207d76a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\screen">
+      <UniqueIdentifier>{04b48eba-bbdb-49e5-96f7-490307a1753f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\screen">
+      <UniqueIdentifier>{c2a4d58f-7df8-4841-88bd-09da97bbc40b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\object">
+      <UniqueIdentifier>{0ca8523c-7715-4228-9dc4-7ca7ad08949d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\object">
+      <UniqueIdentifier>{f0719b2a-67e7-4d69-97e1-766ec012ced0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gfx\res\gfx.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sfx\res\sfx.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.bat">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="res\gfx.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="res\sfx.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

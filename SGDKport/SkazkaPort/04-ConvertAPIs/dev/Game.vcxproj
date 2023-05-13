@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63EBE55D-973D-460A-B009-3E0BAE9C8196}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Game</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\bin\$(ConfigurationName)</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ConfigurationName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\lib;$(ProjectDir)inc;$(ProjectDir)inc\engine;$(ProjectDir)inc\object;$(ProjectDir)inc\screen;$(ProjectDir)res;$(GDK_WIN)\inc;$(IncludePath)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>_genesis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\gfx\res\gfx.c" />
+    <ClCompile Include="..\sfx\res\sfx.c" />
+    <ClCompile Include="src\engine\audio_manager.c" />
+    <ClCompile Include="src\engine\enemy_manager.c" />
+    <ClCompile Include="src\engine\enum_manager.c" />
+    <ClCompile Include="src\engine\fight_manager.c" />
+    <ClCompile Include="src\engine\font_manager.c" />
+    <ClCompile Include="src\engine\game_manager.c" />
+    <ClCompile Include="src\engine\global_manager.c" />
+    <ClCompile Include="src\engine\graphics_manager.c" />
+    <ClCompile Include="src\engine\hack_manager.c" />
+    <ClCompile Include="src\engine\input_manager.c" />
+    <ClCompile Include="src\engine\locale_manager.c" />
+    <ClCompile Include="src\engine\player_manager.c" />
+    <ClCompile Include="src\engine\random_manager.c" />
+    <ClCompile Include="src\engine\screen_manager.c" />
+    <ClCompile Include="src\engine\select_manager.c" />
+    <ClCompile Include="src\engine\text_manager.c" />
+    <ClCompile Include="src\engine\timer_manager.c" />
+    <ClCompile Include="src\fixedbank.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\object\audio_object.c" />
+    <ClCompile Include="src\object\enemy_object.c" />
+    <ClCompile Include="src\object\game_object.c" />
+    <ClCompile Include="src\object\hack_object.c" />
+    <ClCompile Include="src\object\player_object.c" />
+    <ClCompile Include="src\object\select_object.c" />
+    <ClCompile Include="src\object\timer_object.c" />
+    <ClCompile Include="src\screen\boss_screen.c" />
+    <ClCompile Include="src\screen\complete_screen.c" />
+    <ClCompile Include="src\screen\credit_screen.c" />
+    <ClCompile Include="src\screen\diff_screen.c" />
+    <ClCompile Include="src\screen\forest_screen.c" />
+    <ClCompile Include="src\screen\func_screen.c" />
+    <ClCompile Include="src\screen\intro_screen.c" />
+    <ClCompile Include="src\screen\kill_screen.c" />
+    <ClCompile Include="src\screen\load_screen.c" />
+    <ClCompile Include="src\screen\menu_screen.c" />
+    <ClCompile Include="src\screen\none_screen.c" />
+    <ClCompile Include="src\screen\over_screen.c" />
+    <ClCompile Include="src\screen\prep_screen.c" />
+    <ClCompile Include="src\screen\relive_screen.c" />
+    <ClCompile Include="src\screen\shop_screen.c" />
+    <ClCompile Include="src\screen\splash_screen.c" />
+    <ClCompile Include="src\screen\start_screen.c" />
+    <ClCompile Include="src\screen\stats_screen.c" />
+    <ClCompile Include="src\screen\talk_screen.c" />
+    <ClCompile Include="src\screen\test_screen.c" />
+    <ClCompile Include="src\screen\title_screen.c" />
+    <ClCompile Include="src\screen\victory_screen.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\engine\audio_manager.h" />
+    <ClInclude Include="inc\engine\enemy_manager.h" />
+    <ClInclude Include="inc\engine\enum_manager.h" />
+    <ClInclude Include="inc\engine\fight_manager.h" />
+    <ClInclude Include="inc\engine\font_manager.h" />
+    <ClInclude Include="inc\engine\game_manager.h" />
+    <ClInclude Include="inc\engine\global_manager.h" />
+    <ClInclude Include="inc\engine\graphics_manager.h" />
+    <ClInclude Include="inc\engine\hack_manager.h" />
+    <ClInclude Include="inc\engine\input_manager.h" />
+    <ClInclude Include="inc\engine\locale_manager.h" />
+    <ClInclude Include="inc\engine\player_manager.h" />
+    <ClInclude Include="inc\engine\random_manager.h" />
+    <ClInclude Include="inc\engine\screen_manager.h" />
+    <ClInclude Include="inc\engine\select_manager.h" />
+    <ClInclude Include="inc\engine\text_manager.h" />
+    <ClInclude Include="inc\engine\timer_manager.h" />
+    <ClInclude Include="inc\fixedbank.h" />
+    <ClInclude Include="inc\main.h" />
+    <ClInclude Include="inc\object\audio_object.h" />
+    <ClInclude Include="inc\object\enemy_object.h" />
+    <ClInclude Include="inc\object\game_object.h" />
+    <ClInclude Include="inc\object\hack_object.h" />
+    <ClInclude Include="inc\object\player_object.h" />
+    <ClInclude Include="inc\object\select_object.h" />
+    <ClInclude Include="inc\object\timer_object.h" />
+    <ClInclude Include="inc\screen\boss_screen.h" />
+    <ClInclude Include="inc\screen\complete_screen.h" />
+    <ClInclude Include="inc\screen\credit_screen.h" />
+    <ClInclude Include="inc\screen\diff_screen.h" />
+    <ClInclude Include="inc\screen\forest_screen.h" />
+    <ClInclude Include="inc\screen\func_screen.h" />
+    <ClInclude Include="inc\screen\intro_screen.h" />
+    <ClInclude Include="inc\screen\kill_screen.h" />
+    <ClInclude Include="inc\screen\load_screen.h" />
+    <ClInclude Include="inc\screen\menu_screen.h" />
+    <ClInclude Include="inc\screen\none_screen.h" />
+    <ClInclude Include="inc\screen\over_screen.h" />
+    <ClInclude Include="inc\screen\prep_screen.h" />
+    <ClInclude Include="inc\screen\relive_screen.h" />
+    <ClInclude Include="inc\screen\shop_screen.h" />
+    <ClInclude Include="inc\screen\splash_screen.h" />
+    <ClInclude Include="inc\screen\start_screen.h" />
+    <ClInclude Include="inc\screen\stats_screen.h" />
+    <ClInclude Include="inc\screen\talk_screen.h" />
+    <ClInclude Include="inc\screen\test_screen.h" />
+    <ClInclude Include="inc\screen\title_screen.h" />
+    <ClInclude Include="inc\screen\victory_screen.h" />
+    <ClInclude Include="res\gfx.h" />
+    <ClInclude Include="res\sfx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

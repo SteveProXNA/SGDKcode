@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\content">
+      <UniqueIdentifier>{5bdd980b-dd7b-4f84-ace5-7f4b4940b1b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\content">
+      <UniqueIdentifier>{cf996228-0a46-42c0-92c1-6bc3de3f7644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\banks">
+      <UniqueIdentifier>{87a4310e-e253-4495-8840-043d79685cf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\banks">
+      <UniqueIdentifier>{9bf80a47-b889-46c2-b03e-cec78d78d409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine">
+      <UniqueIdentifier>{1056a7e7-824a-43c9-ba54-c2af375f2906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{720d5bba-902e-4b21-8289-9d77cbd82f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\object">
+      <UniqueIdentifier>{cb3eb5fa-8f26-496a-a1ef-cb4e077f99f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\screen">
+      <UniqueIdentifier>{e7e25668-9ab4-4917-9e91-739509379d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\screen">
+      <UniqueIdentifier>{9a15e160-3a88-4567-bf5b-43530d2395b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\object">
+      <UniqueIdentifier>{5c9e79b0-af65-416e-8154-91f655be5ef9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gfx\res\gfx_actors.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gfx\res\gfx_sprites.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gfx\res\gfx_tiles.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sfx\res\sfx_effects.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sfx\res\sfx_musics.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sfx\res\sfx_results.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.bat">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="res\gfx_actors.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="res\gfx_sprites.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="res\gfx_tiles.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="res\sfx_effects.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="res\sfx_musics.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="res\sfx_results.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

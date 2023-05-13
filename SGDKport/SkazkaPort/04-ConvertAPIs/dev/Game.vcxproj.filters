@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\engine">
+      <UniqueIdentifier>{e31d971d-be79-42f6-8302-dfe76fae8ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{a9e18b6c-389e-41e1-b60b-c11fae96c632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\object">
+      <UniqueIdentifier>{474308bf-8e59-45f0-9838-8016f2786b47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\object">
+      <UniqueIdentifier>{67993c58-ec50-4646-ba34-7a859a26de65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\screen">
+      <UniqueIdentifier>{59f98df5-c9bb-45d0-9875-88005323af13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\screen">
+      <UniqueIdentifier>{46f61f14-8fe6-4af7-a63a-9da514de41ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\content">
+      <UniqueIdentifier>{9f8b15fa-0cd1-4713-860a-acc07e0628c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\content">
+      <UniqueIdentifier>{895e2f52-b4c7-432c-b458-5819b2525988}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\audio_object.c">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\enemy_object.c">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\game_object.c">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\hack_object.c">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\player_object.c">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\select_object.c">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\timer_object.c">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fixedbank.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\boss_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\complete_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\credit_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\diff_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\forest_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\func_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\intro_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\load_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\menu_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\none_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\over_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\prep_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\relive_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\shop_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\splash_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\start_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\stats_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\talk_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\test_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\title_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\enum_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\global_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\font_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\locale_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\audio_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\enemy_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\fight_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\game_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\graphics_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\hack_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\input_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\player_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\random_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\screen_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\select_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\text_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\timer_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\kill_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen\victory_screen.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gfx\res\gfx.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sfx\res\sfx.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.bat">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\object\audio_object.h">
+      <Filter>Header Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\object\enemy_object.h">
+      <Filter>Header Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\object\game_object.h">
+      <Filter>Header Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\object\hack_object.h">
+      <Filter>Header Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\object\player_object.h">
+      <Filter>Header Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\object\select_object.h">
+      <Filter>Header Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\object\timer_object.h">
+      <Filter>Header Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\fixedbank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\boss_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\complete_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\credit_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\diff_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\forest_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\func_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\intro_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\load_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\menu_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\none_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\over_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\prep_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\relive_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\shop_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\splash_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\start_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\stats_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\talk_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\test_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\title_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\victory_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\enum_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\global_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\font_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\locale_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\screen\kill_screen.h">
+      <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\audio_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\enemy_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\fight_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\game_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\graphics_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\hack_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\input_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\player_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\random_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\screen_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\select_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\text_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\engine\timer_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="res\gfx.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="res\sfx.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
